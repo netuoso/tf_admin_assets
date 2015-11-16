@@ -6,6 +6,6 @@ class TfAdminAssetsGenerator < Rails::Generators::NamedBase
     directory 'controllers', 'app/controllers'
     directory 'layouts', 'app/views/layouts'
     directory 'pages', 'app/views/pages'
-    route "get 'dashboard', to: 'pages#index'"
+    route "root 'pages#dashboard'\n%w(dashboard blank buttons flot forms grid icons login morris notifications panels_wells tables typography).each do |page|\nget '#{page}', to: 'pages##{page}'\nend"
   end
 end
