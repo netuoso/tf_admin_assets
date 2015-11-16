@@ -3,6 +3,7 @@ class TfAdminAssetsGenerator < Rails::Generators::NamedBase
   desc 'Copy design example pages and mount engine'
 
   def install
+    directory 'controllers', 'app/views/controllers'
     directory 'layouts', 'app/views/layouts'
     directory 'pages', 'app/views/pages'
     route "get 'dashboard', to: 'pages#index'"
