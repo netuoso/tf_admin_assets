@@ -1,4 +1,4 @@
-PagesController < ApplicationController
+class PagesController < ApplicationController
 
   def index
   end
