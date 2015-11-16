@@ -14,6 +14,7 @@
 //= require bootstrap
 //= require morris
 //= require morris-data
+//= require jquery.flot
 //= require raphael
 //= require metisMenu
 //= require sb-admin-2
