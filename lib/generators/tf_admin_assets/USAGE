@@ -1,0 +1,5 @@
+Description:
+    Copy design views and mount engine
+
+Example:
+    rails generate copy_views
