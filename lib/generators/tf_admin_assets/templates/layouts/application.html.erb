@@ -11,6 +11,9 @@
 
     <title>SB Admin 2 - Bootstrap Admin Theme</title>
 
+    <%= stylesheet_link_tag 'application' %>
+    <%= csrf_meta_tags %>
+
 </head>
 
 <body>
@@ -18,5 +21,7 @@
 <%= yield %>
 
 </body>
+
+<%= javascript_include_tag 'application' %>
 
 </html>
